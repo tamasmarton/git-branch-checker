@@ -1,0 +1,45 @@
+{
+  "name": "@tamasmarton/git-branch-checker",
+  "version": "1.0.0-beta.0",
+  "description": "CLI tool to check Git branch names",
+  "type": "module",
+  "bin": {
+    "git-branch-checker": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "types": "dist/cli.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "dist/cli.js"
+  },
+  "keywords": [],
+  "author": "Tamas Marton",
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.3",
+  "devDependencies": {
+    "@types/node": "^20.17.24",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamasmarton/git-branch-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tamasmarton/git-branch-checker/issues"
+  },
+  "homepage": "https://github.com/tamasmarton/git-branch-checker#readme",
+  "contributors": [
+    {
+      "name": "Tamas Marton",
+      "email": "hello@tamasmarton.com",
+      "url": "https://github.com/tamasmarton"
+    }
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
