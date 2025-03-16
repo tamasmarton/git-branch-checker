@@ -19,6 +19,9 @@ jobs:
           node-version: 22
           registry-url: 'https://registry.npmjs.org/'
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3 # docs https://pnpm.io/continuous-integration#github-actions
+
       - name: Install dependencies
         run: pnpm install
 
