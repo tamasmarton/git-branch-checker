@@ -1,0 +1,420 @@
+{
+  "name": "@tamasmarton/git-branch-checker",
+  "version": "1.0.0-beta.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "@tamasmarton/git-branch-checker",
+      "version": "1.0.0-beta.0",
+      "license": "MIT",
+      "bin": {
+        "git-branch-checker": "dist/cli.js"
+      },
+      "devDependencies": {
+        "@types/node": "^20.17.24",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.2"
+      },
+      "engines": {
+        "node": ">=14.0.0"
+      }
+    },
+    "node_modules/.pnpm": {},
+    "node_modules/.pnpm/@cspotcode+source-map-support@0.8.1": {},
+    "node_modules/.pnpm/@cspotcode+source-map-support@0.8.1/node_modules/@cspotcode/source-map-support": {
+      "version": "0.8.1",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/trace-mapping": "0.3.9"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/.pnpm/@cspotcode+source-map-support@0.8.1/node_modules/@jridgewell/trace-mapping": {
+      "resolved": "node_modules/.pnpm/@jridgewell+trace-mapping@0.3.9/node_modules/@jridgewell/trace-mapping",
+      "link": true
+    },
+    "node_modules/.pnpm/@jridgewell+resolve-uri@3.1.2/node_modules/@jridgewell/resolve-uri": {
+      "version": "3.1.2",
+      "dev": true,
+      "license": "MIT",
+      "devDependencies": {
+        "@jridgewell/resolve-uri-latest": "npm:@jridgewell/resolve-uri@*",
+        "@rollup/plugin-typescript": "8.3.0",
+        "@typescript-eslint/eslint-plugin": "5.10.0",
+        "@typescript-eslint/parser": "5.10.0",
+        "c8": "7.11.0",
+        "eslint": "8.7.0",
+        "eslint-config-prettier": "8.3.0",
+        "mocha": "9.2.0",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.5.1",
+        "rollup": "2.66.0",
+        "typescript": "4.5.5"
+      },
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/.pnpm/@jridgewell+sourcemap-codec@1.5.0/node_modules/@jridgewell/sourcemap-codec": {
+      "version": "1.5.0",
+      "dev": true,
+      "license": "MIT",
+      "devDependencies": {
+        "@rollup/plugin-typescript": "8.3.0",
+        "@types/mocha": "10.0.6",
+        "@types/node": "17.0.15",
+        "@typescript-eslint/eslint-plugin": "5.10.0",
+        "@typescript-eslint/parser": "5.10.0",
+        "benchmark": "2.1.4",
+        "c8": "7.11.2",
+        "eslint": "8.7.0",
+        "eslint-config-prettier": "8.3.0",
+        "mocha": "9.2.0",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.5.1",
+        "rollup": "2.64.0",
+        "source-map": "0.6.1",
+        "source-map-js": "1.0.2",
+        "sourcemap-codec": "1.4.8",
+        "tsx": "4.7.1",
+        "typescript": "4.5.4"
+      }
+    },
+    "node_modules/.pnpm/@jridgewell+trace-mapping@0.3.9": {},
+    "node_modules/.pnpm/@jridgewell+trace-mapping@0.3.9/node_modules/@jridgewell/resolve-uri": {
+      "resolved": "node_modules/.pnpm/@jridgewell+resolve-uri@3.1.2/node_modules/@jridgewell/resolve-uri",
+      "link": true
+    },
+    "node_modules/.pnpm/@jridgewell+trace-mapping@0.3.9/node_modules/@jridgewell/sourcemap-codec": {
+      "resolved": "node_modules/.pnpm/@jridgewell+sourcemap-codec@1.5.0/node_modules/@jridgewell/sourcemap-codec",
+      "link": true
+    },
+    "node_modules/.pnpm/@jridgewell+trace-mapping@0.3.9/node_modules/@jridgewell/trace-mapping": {
+      "version": "0.3.9",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/resolve-uri": "^3.0.3",
+        "@jridgewell/sourcemap-codec": "^1.4.10"
+      }
+    },
+    "node_modules/.pnpm/@tsconfig+node10@1.0.11/node_modules/@tsconfig/node10": {
+      "version": "1.0.11",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/.pnpm/@tsconfig+node12@1.0.11/node_modules/@tsconfig/node12": {
+      "version": "1.0.11",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/.pnpm/@tsconfig+node14@1.0.3/node_modules/@tsconfig/node14": {
+      "version": "1.0.3",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/.pnpm/@tsconfig+node16@1.0.4/node_modules/@tsconfig/node16": {
+      "version": "1.0.4",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/.pnpm/@types+node@20.17.24": {},
+    "node_modules/.pnpm/@types+node@20.17.24/node_modules/@types/node": {
+      "version": "20.17.24",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "undici-types": "~6.19.2"
+      }
+    },
+    "node_modules/.pnpm/@types+node@20.17.24/node_modules/undici-types": {
+      "resolved": "node_modules/.pnpm/undici-types@6.19.8/node_modules/undici-types",
+      "link": true
+    },
+    "node_modules/.pnpm/acorn-walk@8.3.4": {},
+    "node_modules/.pnpm/acorn-walk@8.3.4/node_modules/acorn": {
+      "resolved": "node_modules/.pnpm/acorn@8.14.1/node_modules/acorn",
+      "link": true
+    },
+    "node_modules/.pnpm/acorn-walk@8.3.4/node_modules/acorn-walk": {
+      "version": "8.3.4",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "acorn": "^8.11.0"
+      },
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/.pnpm/acorn@8.14.1/node_modules/acorn": {
+      "version": "8.14.1",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "acorn": "bin/acorn"
+      },
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/.pnpm/arg@4.1.3/node_modules/arg": {
+      "version": "4.1.3",
+      "dev": true,
+      "license": "MIT",
+      "devDependencies": {
+        "chai": "^4.1.1",
+        "jest": "^20.0.4",
+        "xo": "^0.18.2"
+      }
+    },
+    "node_modules/.pnpm/create-require@1.1.1/node_modules/create-require": {
+      "version": "1.1.1",
+      "dev": true,
+      "license": "MIT",
+      "devDependencies": {
+        "@nuxtjs/eslint-config": "latest",
+        "eslint": "latest",
+        "standard-version": "latest",
+        "tap": "latest"
+      }
+    },
+    "node_modules/.pnpm/diff@4.0.2/node_modules/diff": {
+      "version": "4.0.2",
+      "dev": true,
+      "license": "BSD-3-Clause",
+      "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+        "@babel/preset-env": "^7.2.3",
+        "@babel/register": "^7.0.0",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.5",
+        "chai": "^4.2.0",
+        "colors": "^1.3.3",
+        "eslint": "^5.12.0",
+        "grunt": "^1.0.3",
+        "grunt-babel": "^8.0.0",
+        "grunt-clean": "^0.4.0",
+        "grunt-cli": "^1.3.2",
+        "grunt-contrib-clean": "^2.0.0",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-uglify": "^4.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-eslint": "^21.0.0",
+        "grunt-exec": "^3.0.0",
+        "grunt-karma": "^3.0.1",
+        "grunt-mocha-istanbul": "^5.0.2",
+        "grunt-mocha-test": "^0.13.3",
+        "grunt-webpack": "^3.1.3",
+        "istanbul": "github:kpdecker/istanbul",
+        "karma": "^3.1.4",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-mocha": "^1.3.0",
+        "karma-mocha-reporter": "^2.0.0",
+        "karma-sauce-launcher": "^2.0.2",
+        "karma-sourcemap-loader": "^0.3.6",
+        "karma-webpack": "^3.0.5",
+        "mocha": "^5.2.0",
+        "rollup": "^1.0.2",
+        "rollup-plugin-babel": "^4.2.0",
+        "semver": "^5.6.0",
+        "webpack": "^4.28.3",
+        "webpack-dev-server": "^3.1.14"
+      },
+      "engines": {
+        "node": ">=0.3.1"
+      }
+    },
+    "node_modules/.pnpm/make-error@1.3.6/node_modules/make-error": {
+      "version": "1.3.6",
+      "dev": true,
+      "license": "ISC",
+      "devDependencies": {
+        "browserify": "^16.2.3",
+        "eslint": "^6.5.1",
+        "eslint-config-prettier": "^6.4.0",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "husky": "^3.0.9",
+        "jest": "^24",
+        "prettier": "^1.14.3",
+        "uglify-js": "^3.3.2"
+      }
+    },
+    "node_modules/.pnpm/node_modules/diff": {
+      "resolved": "node_modules/.pnpm/diff@4.0.2/node_modules/diff",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2": {},
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/@cspotcode/source-map-support": {
+      "resolved": "node_modules/.pnpm/@cspotcode+source-map-support@0.8.1/node_modules/@cspotcode/source-map-support",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/@tsconfig/node10": {
+      "resolved": "node_modules/.pnpm/@tsconfig+node10@1.0.11/node_modules/@tsconfig/node10",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/@tsconfig/node12": {
+      "resolved": "node_modules/.pnpm/@tsconfig+node12@1.0.11/node_modules/@tsconfig/node12",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/@tsconfig/node14": {
+      "resolved": "node_modules/.pnpm/@tsconfig+node14@1.0.3/node_modules/@tsconfig/node14",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/@tsconfig/node16": {
+      "resolved": "node_modules/.pnpm/@tsconfig+node16@1.0.4/node_modules/@tsconfig/node16",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/@types/node": {
+      "resolved": "node_modules/.pnpm/@types+node@20.17.24/node_modules/@types/node",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/acorn": {
+      "resolved": "node_modules/.pnpm/acorn@8.14.1/node_modules/acorn",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/acorn-walk": {
+      "resolved": "node_modules/.pnpm/acorn-walk@8.3.4/node_modules/acorn-walk",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/arg": {
+      "resolved": "node_modules/.pnpm/arg@4.1.3/node_modules/arg",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/create-require": {
+      "resolved": "node_modules/.pnpm/create-require@1.1.1/node_modules/create-require",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/diff": {
+      "resolved": "node_modules/.pnpm/diff@4.0.2/node_modules/diff",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/make-error": {
+      "resolved": "node_modules/.pnpm/make-error@1.3.6/node_modules/make-error",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/ts-node": {
+      "version": "10.9.2",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@cspotcode/source-map-support": "^0.8.0",
+        "@tsconfig/node10": "^1.0.7",
+        "@tsconfig/node12": "^1.0.7",
+        "@tsconfig/node14": "^1.0.0",
+        "@tsconfig/node16": "^1.0.2",
+        "acorn": "^8.4.1",
+        "acorn-walk": "^8.1.1",
+        "arg": "^4.1.0",
+        "create-require": "^1.1.0",
+        "diff": "^4.0.1",
+        "make-error": "^1.1.1",
+        "v8-compile-cache-lib": "^3.0.1",
+        "yn": "3.1.1"
+      },
+      "bin": {
+        "ts-node": "dist/bin.js",
+        "ts-node-cwd": "dist/bin-cwd.js",
+        "ts-node-esm": "dist/bin-esm.js",
+        "ts-node-script": "dist/bin-script.js",
+        "ts-node-transpile-only": "dist/bin-transpile.js",
+        "ts-script": "dist/bin-script-deprecated.js"
+      },
+      "peerDependencies": {
+        "@swc/core": ">=1.2.50",
+        "@swc/wasm": ">=1.2.50",
+        "@types/node": "*",
+        "typescript": ">=2.7"
+      },
+      "peerDependenciesMeta": {
+        "@swc/core": {
+          "optional": true
+        },
+        "@swc/wasm": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/typescript": {
+      "resolved": "node_modules/.pnpm/typescript@5.8.2/node_modules/typescript",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/v8-compile-cache-lib": {
+      "resolved": "node_modules/.pnpm/v8-compile-cache-lib@3.0.1/node_modules/v8-compile-cache-lib",
+      "link": true
+    },
+    "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/yn": {
+      "resolved": "node_modules/.pnpm/yn@3.1.1/node_modules/yn",
+      "link": true
+    },
+    "node_modules/.pnpm/typescript@5.8.2": {},
+    "node_modules/.pnpm/typescript@5.8.2/node_modules/typescript": {
+      "version": "5.8.2",
+      "dev": true,
+      "license": "Apache-2.0",
+      "bin": {
+        "tsc": "bin/tsc",
+        "tsserver": "bin/tsserver"
+      },
+      "engines": {
+        "node": ">=14.17"
+      }
+    },
+    "node_modules/.pnpm/undici-types@6.19.8/node_modules/undici-types": {
+      "version": "6.19.8",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/.pnpm/v8-compile-cache-lib@3.0.1/node_modules/v8-compile-cache-lib": {
+      "version": "3.0.1",
+      "dev": true,
+      "license": "MIT",
+      "devDependencies": {
+        "babel-core": "6.26.3",
+        "eslint": "^7.12.1",
+        "flow-parser": "0.136.0",
+        "rimraf": "^2.5.4",
+        "rxjs": "6.6.3",
+        "semver": "^5.3.0",
+        "tap": "^9.0.0",
+        "temp": "^0.8.3",
+        "yarn": "1.22.10"
+      }
+    },
+    "node_modules/.pnpm/yn@3.1.1/node_modules/yn": {
+      "version": "3.1.1",
+      "dev": true,
+      "license": "MIT",
+      "devDependencies": {
+        "ava": "^1.4.1",
+        "tsd": "^0.7.2",
+        "xo": "^0.24.0"
+      },
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/@types/node": {
+      "resolved": "node_modules/.pnpm/@types+node@20.17.24/node_modules/@types/node",
+      "link": true
+    },
+    "node_modules/ts-node": {
+      "resolved": "node_modules/.pnpm/ts-node@10.9.2_@types+node@20.17.24_typescript@5.8.2/node_modules/ts-node",
+      "link": true
+    },
+    "node_modules/typescript": {
+      "resolved": "node_modules/.pnpm/typescript@5.8.2/node_modules/typescript",
+      "link": true
+    }
+  }
+}
